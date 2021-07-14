@@ -45,12 +45,17 @@ header{
     height: 438px;
 }
 
+/* container style */
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 /* players grid */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 129px;
-    margin-right: 129px;
+    
 }
 
 .player{
@@ -91,10 +96,40 @@ header{
     padding-top: 10px;
 }
 
+/* news section */
+
+.title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+.news{
+    display: flex;
+}
+hr{
+    color: rgb(216, 211, 211);
+}
+.news-img img{
+    width: 25em;
+    height: 13em;
+}
+.news-details h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+.news-details p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(185, 184, 184);
+    margin-left: 10px;
+}
+
 /* footer design */
 footer{
     margin-top: 80px;
     margin-bottom: 63px;
+    
 }
 .logo{
     display: flex;
@@ -134,9 +169,9 @@ footer{
 }
 
 /* media queires */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     header{
-        height: 1354px;
+        height: 850px;
         margin-right: -150px;
     }
     .heading h1{
@@ -146,9 +181,12 @@ footer{
     justify-content: center;
     }
     .heading button{
-        display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+        position: relative;
+        left: 20%;
+        margin-bottom: 20px;
+    }
+    .football-img img{
+        width: 100%;
     }
     .players, .top-section{
         display: grid;
