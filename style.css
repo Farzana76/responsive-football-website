@@ -135,10 +135,31 @@ footer{
 
 /* media queires */
 @media only screen and (max-width: 600px) {
-    .players{
+    header{
+        height: 1354px;
+        margin-right: -150px;
+    }
+    .heading h1{
+        margin-top: -200px;
+        font-size: 44px;
+        display: flex;
+    justify-content: center;
+    }
+    .heading button{
+        display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    .players, .top-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
     }
+    .top-section:hover h1{
+        transform: scale(1.25) rotate(360deg) ;
+        transform-origin: 50%;
+        transition-duration: 3s;
+    }
+    
     
 }
